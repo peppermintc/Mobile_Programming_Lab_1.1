@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--Outer layout is linear layout and it is vertical orientation.-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHANGE IMAGE"
+        android:layout_gravity="center"
+        android:onClick="onButtonClicked"/>
+    <!--When button is clicked execute onButtonClicked method.-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/android_red"
+            android:visibility="visible"/>
+        <!--Starting image view.-->
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/android_blue"
+            android:visibility="invisible"/>
+        <!--This image view will be visible when onButtonClicked method executes.-->
+
+    </FrameLayout>
+    <!--Frame layout for image views-->
+
+</LinearLayout>
